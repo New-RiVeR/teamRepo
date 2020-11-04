@@ -135,13 +135,28 @@ span.button-promotion::before{
 }
 
 .basket-button {
-    margin-top: 50px;
-    background-image: url(../img/shopping-basket.svg);
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+    margin-top: 40px;
+    background-color: transparent;
+    height: 38px;
+    width: 38px;
+    cursor: pointer; 
+    color: white;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
+    display: block;
 }
 
+.basket-button svg {
+    
+    color: white;
+    height: 35px;
+    width: 35px;
+    margin-left: -6px;
+} 
+.basket-button:hover {
+    background-color: #755831;
+}
 .slider__item {
     min-height: 635px;
     background-repeat: no-repeat;

@@ -3,10 +3,6 @@ body {
     background-color: #f8f8f8;
 }
 
-h3{
-    font-family: Helvetica;
-}
-
 .header-social-columns {
     background: #0e0e0e;
     height: 50px;
@@ -259,12 +255,6 @@ a.menu-items {
 
 .right-list--items li{
     padding: 10px 0px;
-}
-
-.right-list--items a{
-    text-decoration: none;
-    color: black;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .background {
