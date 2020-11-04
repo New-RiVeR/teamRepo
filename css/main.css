@@ -54,6 +54,11 @@ body {
   float: left;
   width: 50%;
 }
+
+.watch-box-1-left img{
+  margin-left: 74px;
+}
+
 .watch-box-2-left {
   float: left;
   width: 50%;
@@ -63,6 +68,12 @@ body {
   float: left;
   width: 50%;
 }
+
+.watch-box-2-right{
+  margin-top: -8px;
+  margin-left: -0.5px;
+}
+
 .watch-box-1-right-text {
   margin: 30px 110px 180px  100px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -85,6 +96,7 @@ body {
   color: #121212;
   letter-spacing: 6px;
   border: 2px solid;
+  cursor: pointer;
 }
 .watch-box-2-left-button {
   margin-left: 100px;
@@ -137,10 +149,16 @@ body {
   margin-top: 30px;
 }
 .watch-box-2-left-button:hover {
- color: #ab8e69
+ color: black;
+ border-color: black;
+ background-color:white;
+ transition: all .9s;
 }
 .watch-box-1-right-button:hover {
   background-color:#ab8e69;
+  transition: all .9s;
+  border-color: white;
+  color: white;
 }
 .watch-box-hugoBoss {
   background-image: url(https://demo.kallyas.net/watchshop/wp-content/uploads/sites/21/2016/09/bg01.jpg);

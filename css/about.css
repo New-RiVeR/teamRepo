@@ -37,8 +37,13 @@ body {
 }
  .box-0-right {
   float: left;
-  width: 5%;
+  width: 50%;
 }
+
+.box-0-right img{
+  width: 80%;
+}
+
 .box-1-right-text {
   margin: 30px 110px 180px  100px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;

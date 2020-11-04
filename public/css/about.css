@@ -7,6 +7,15 @@ body {
   display: inline-block;
 }
 
+/* .watch-box-1 {
+  width: 100%;
+  display: inline-block;
+}
+.watch-box-2 {
+  width: 100%;
+  display: inline-block;
+} */
+
 .box-1-right {
   float: left;
   width: 50%;
@@ -17,7 +26,11 @@ body {
   width: 50%;
   margin-top: 10%;
 }
-
+/* .box-2-left {
+  float: left;
+  width: 50%;
+  margin-top: 10%;
+} */
 .box-2-right, .box-0-right {
   float: left;
   width: 50%;
@@ -29,7 +42,6 @@ body {
 
 .box-0-right img{
   width: 80%;
-  margin: 10px;
 }
 
 .box-1-right-text {
@@ -37,7 +49,6 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
-
 .box-2-left-text, .box-0-left-text {
   margin: 30px 110px 180px  100px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
