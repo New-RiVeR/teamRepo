@@ -1,0 +1,18 @@
+{
+  "name": "sergey-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sergey",
+    "dev": "sergey --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^15.0.1",
+    "sergey": "0.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
