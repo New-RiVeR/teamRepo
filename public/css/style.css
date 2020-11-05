@@ -23,11 +23,19 @@ body {
 }
 .header-social-ico-tel {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: #bcbcbc;
     font-size: 12px;
     line-height: 24px;
     padding-top: 2px;
     float: left;
+}
+.header-social-ico-tel:hover {
+    color: #ab8e69;
+    cursor: pointer;
+}
+.header-social-ico--span1 svg:hover, .header-social-ico--span2 svg:hover, .header-social-ico--span3 svg:hover, .header-social-ico--span4 svg:hover {
+    background-color: #ab8e69;
+
 }
 .header-social-ico{
     position: relative;
