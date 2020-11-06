@@ -1,4 +1,4 @@
-// function myPrice() {
+ // function myPrice() {
 //   let prc, text;
 
 //   prc = document.getElementById("price").value;
