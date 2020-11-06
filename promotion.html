@@ -8,7 +8,27 @@
 <body>
   
 
-    
+    <!-- Простая форма, которая пошлёт GET запрос -->
+<form action="">
+  <label for="GET-name">Name:</label>
+  <input id="GET-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+
+<!-- Простая форма, которая пошлёт POST запрос -->
+<form action="" method="post">
+  <label for="POST-name">Name:</label>
+  <input id="POST-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+
+<!-- Форма с fieldset, legend, и label -->
+<form action="" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+</form>
 <!--   
   <h2>Додати новий товар</h2>
 
@@ -20,7 +40,7 @@
 
 <p id="demo"></p> -->
   
-   <h2>JavaScript Can Validate Input</h2>
+   <!-- <h2>JavaScript Can Validate Input</h2>
 
    <p>Please input a number between 1 and 10:</p>
    
@@ -28,7 +48,7 @@
    
    <button type="button" onclick="myFunction()">Submit</button>
    
-   <p id="demo"></p>
+   <p id="demo"></p> -->
   
   
   <script src="/js/promotion.js"></script>
