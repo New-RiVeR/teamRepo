@@ -4,33 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS form</title>
+  <link rel="stylesheet" href="css/promotion.css" />
 </head>
 <body>
   
-
-    
-<!--   
-  <h2>Додати новий товар</h2>
-
-<p>Ціна має бути від $100 до $1000:</p>
-
-<input id="price">
-
-<button type="button" onclick="myPrice()">Додати товар</button>
-
-<p id="demo"></p> -->
-  
-   <h2>JavaScript Can Validate Input</h2>
-
-   <p>Please input a number between 1 and 10:</p>
-   
-   <input id="numb">
-   
-   <button type="button" onclick="myFunction()">Submit</button>
-   
-   <p id="demo"></p>
-  
-  
+<title>New card</title>
+      
+         
+  <div class="form">
+    <form method="GET" action="process-action.html" onsubmit = "return validateForm()">
+        Заголовок: <input type="text" name="title" id="title"/>
+        <p id="titleText"></p>
+        <br><br>
+        Опис: <input type="password" name = "password" id="password"/>
+        <br><br>
+        <p id="passText"></p>
+        Ціна: <input type="price" name = "price" id="price"/>
+        <br><br>
+        <p id="priceText"></p>
+        <button type="submit">Додати</button>
+    </form>
+  </div>
   <script src="/js/promotion.js"></script>
 </body>
 </html>

@@ -1,28 +1,70 @@
- // function myPrice() {
-//   let prc, text;
-
-//   prc = document.getElementById("price").value;
-
-//   if (isNaN(prc) || prc < 100 || prc > 1000) {
-//     text = "Не коректна ціна"
-    
-//   } else {
-//     text = "Нічого так";
+// function validateForm()  {
+//   var titleForMe = document.getElementById("title").value;
+//   var pass = document.getElementById("password").value;
+//   var priceForMe = document.getElementById("price").value;
+//   var text = document.getElementById('titleText');
+//   if(titleForMe == "") {
+//       innerText = "введи заголовок";
+//       document.getElementById("titleText").innerHTML = innerText;
+//       return false;
 //   }
-//   document.getElementById("demo").innerHTML = text;
+//   if(pass == "") {
+//       innerText = "введи опис";
+//       document.getElementById("passText").innerHTML = innerText;
+//       return false;
+//   }
+
+//   if(priceForMe == "") {
+//     innerText = "введи ціну";
+//     document.getElementById("priceText").innerHTML = innerText;
+//     if (typeof(priceForMe) === "number") {
+//       innerText = "ok";
+//     } else {
+//       innerText = "error";
+//     }
+//     return false;
 // }
-function myFunction() {
-  var x, text;
 
-  // Get the value of the input field with id="numb"
-  x = document.getElementById("numb").value;
+//   alert("Дані збережено та відправлено на сервер!")
 
-  // If x is Not a Number or less than one or greater than 10
-  if (isNaN(x) || x < 100 || x > 1000) {
-    text = "Не коректна ціна";
-  } else {
-    text = "Нічого так";
+//   return true;
+// }
+
+function validateForm()  {
+
+  var titleForMe = document.getElementById("title").value;
+  var pass = document.getElementById("password").value;
+  var priceForMe = document.getElementById("price").value;
+  var text = document.getElementById('titleText');
+  if(!titleForMe && !pass && !priceForMe) {
+      innerText = "введи заголовок";
+      document.getElementById("titleText").innerHTML = innerText;
+      innerText = "введи опис";
+      document.getElementById("passText").innerHTML = innerText;
+      innerText = "введи ціну";
+      document.getElementById("priceText").innerHTML = innerText;
+      return false;
+  } 
+
+
+
+  if(pass == "") {
+      innerText = "введи опис";
+      document.getElementById("passText").innerHTML = innerText;
+      return false;
   }
-  
-  document.getElementById("demo").innerHTML = text;
+
+  if(priceForMe == "") {
+    innerText = "введи ціну";
+    document.getElementById("priceText").innerHTML = innerText;
+    if (typeof(priceForMe) === "number") {
+      innerText = "ok";
+    } else {
+      innerText = "error";
+    }
+    return false;
+}
+  alert("Дані збережено та відправлено на сервер!")
+
+  return true;
 }
