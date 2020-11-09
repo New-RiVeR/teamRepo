@@ -1,0 +1,8 @@
+.form {
+  border:1px solid #ddd; padding: 5px;
+  width: 150px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
