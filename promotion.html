@@ -14,20 +14,17 @@
       
          
   <div class="form">
-    <form method="GET" action="" onsubmit = "return validateForm()">
-        Заголовок: <input type="text" min="1" max="5" name="title" id="title"/>
+    <form method="GET" action="">
+        Заголовок: <input type="text" name="title" id="title"/>
         <p id="titleText"></p>
-        <br><br>
+        <br>
         Опис: <input type="text" name = "description" id="description"/>
         <br><br>
         <p id="passText"></p>
-
         Ціна: <input type="number" min="100" max="1000" name = "price" id="price"/>
-
-
         <br><br>
         <p id="priceText"></p>
-        <button type="submit">Додати</button>
+        <button type="button" onclick="validateForm()">Додати</button>
     </form>
 
   </div>
