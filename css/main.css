@@ -1,7 +1,7 @@
 body {
   width: auto;
 }
-.header-container-social{
+/* .header-container-social{
   
   margin-left: 0%;
   display: flex;
@@ -32,7 +32,7 @@ body {
 .header-container {
   margin-left: 0%;
   background-color: black;
-}
+} */
 .watch-box {
   position: relative;
 }

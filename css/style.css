@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
 }
 
@@ -205,7 +205,7 @@ span.button-promotion::before {
 
 .basket-button:hover {
     background-color: #755831;
-}
+} */
 
 .slider__item {
     min-height: 635px;
@@ -377,7 +377,7 @@ main .clock-description {
     font-weight: 50px;
     font-family: Helvetica, Arial, sans-serif;
 }
-
+/* 
 .background {
     background-color: #0e0e0e;
     height: 510px;
@@ -529,4 +529,4 @@ ul.main-footer1 {
     text-align: center;
     color: #8e8e8e;
     font-family: Helvetica, Arial, sans-serif;
-}
+} */
