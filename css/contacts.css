@@ -1,5 +1,6 @@
 .contacts-main {
     margin: 0;
+    width: 100%;
     height: 100%;
     background-color: #f8f8f8;
 }
@@ -7,7 +8,7 @@
 .container {
     margin: 0 auto;
     padding: 80px 0px;
-    width: 1400px;
+    width: 80%;
     height: 750px;
     display: flex;
     box-sizing: border-box;
@@ -22,6 +23,10 @@
 .container-right {
     width: 50%;
     height: 100%;
+}
+
+.map{
+    width: 100%;
 }
 
 .container-left--inner {
@@ -179,4 +184,25 @@
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
+}
+
+@media(max-width: 1280px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+    }
+    .container-left{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-right{
+        width: 80%;
+    }
+    .container-left--inner{
+        margin: 150px 100px;
+    }
 }
