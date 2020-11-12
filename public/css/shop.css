@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: #f8f8f8;
+    max-width: 1920px;
+    
 }
 
 .header-social-columns {
@@ -216,11 +218,14 @@ a.menu-items {
 }
 
 .container-main--right {
-    width: 25%;
+    
     height: 100%;
     background-color: white;
-    margin: 0 15px;
+    
     box-shadow: 0 5px 0 r qgb(224, 224, 224);
+    margin-left: 4rem;
+    margin-top: 0.6rem;
+    width: 175px;
 }
 
 .container-main--rightInner {
@@ -233,13 +238,11 @@ a.menu-items {
 }
 
 .topnav input[type=text] {
-    float: right;
-    padding: 10px 0px 10px 10px;
+    
+    padding: 10px 0px 10px 15px;
     border: 1px solid black;
-    margin-top: 8px;
-    margin-right: 16px;
-    margin-bottom: 20px;
-    font-size: 17px;
+    margin: 9px 13px;
+    font-size: 9px;
 }
 
 .bottomLine{
@@ -382,21 +385,6 @@ ul.main-footer1 {
     padding-left: 0px;
 }
 
-.footer-item--span1::before {
-    content: url(../img/facebook.png);
-}
-
-.footer-item--span2::before {
-    content: url(../img/twitter.png);
-}
-
-.footer-item--span3::before {
-    content: url(../img/pinterest.png);
-}
-
-.footer-item--span4::before {
-    content: url(../img/instagram.png);
-}
 
 
 .footer-end--div {
@@ -410,3 +398,39 @@ ul.main-footer1 {
     color: #8e8e8e;
     font-family: Helvetica, Arial, sans-serif;
 }
+@media (max-width: 1279px) {
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .container-main--left{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 70%;
+        flex-wrap: wrap;
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    }    
+    .container-main--right {
+            display: flex;    
+            width: 13%;
+            height: 90%;
+            background-color: white;
+            margin: 25px 10px 2px 30px;
+            box-shadow: 0 5px 0 r qgb(224, 224, 224);
+            flex: 100%;
+            max-width: 13%;
+            flex-wrap: wrap;
+        }
+    .topnav {
+            
+    padding: 1px 0px 1px 1px;   
+    border: 1px solid black;
+    font-size: 10px;
+        }
+    }
