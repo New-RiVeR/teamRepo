@@ -1,94 +1,71 @@
 const arr = [];
 function validateForm() {
-
   const titleForMe = document.getElementById("title").value;
   const descriptionForMe = document.getElementById("description").value;
   const priceForMe = document.getElementById("price").value;
-  
-
-  if (!titleForMe && !descriptionForMe && !priceForMe) {
-    innerText = "введи заголовок";
-    document.getElementById("titleText").innerHTML = innerText;
-    innerText = "введи опис";
-    document.getElementById("passText").innerHTML = innerText;
-    innerText = "введи ціну";
-    document.getElementById("priceText").innerHTML = innerText;
-    return false;
-  } else if (!descriptionForMe && !priceForMe) {
-    innerText = "введи опис";
-    document.getElementById("passText").innerHTML = innerText;
-    innerText = "введи ціну";
-    document.getElementById("priceText").innerHTML = innerText;
-    return false;
-  } else if (!titleForMe && !priceForMe){
-    innerText = "введи заголовок";
-    document.getElementById("titleText").innerHTML = innerText;
-    innerText = "введи ціну";
-    document.getElementById("priceText").innerHTML = innerText;
-    return false;
-  } else if (!titleForMe && !descriptionForMe){
-    innerText = "введи заголовок";
-    document.getElementById("titleText").innerHTML = innerText;
-    innerText = "введи опис";
-    document.getElementById("passText").innerHTML = innerText;
-    return false;
-  } else if (!titleForMe){
-    innerText = "введи заголовок";
-    document.getElementById("titleText").innerHTML = innerText;
-    return false;
-  } else if (!descriptionForMe){
-    innerText = "введи опис";
-    document.getElementById("passText").innerHTML = innerText;
-    return false;
-  } else if (!priceForMe){
-    innerText = "введи ціну";
-    document.getElementById("priceText").innerHTML = innerText;
-    return false;
+  validForm = true;
+  firstError = null;
+  errorString = "";
+  const formElemets = document.forms[0].elements;
+  for (let i = 0; i < formElemets.length; i++) {
+    if (!formElemets[i].value)
+      writeError(formElemets[i], "This field is required");
   }
-  alert("Дані збережено та відправлено на сервер!")
-  
+
   const newWatch = {
     title: titleForMe,
     description: descriptionForMe,
-    price: priceForMe
-  }
-  buildArray(newWatch);
+    price: priceForMe,
+  };
+  buildWatchArray(newWatch);
 }
 
-function buildArray(newWatch) {
+function writeError(obj, message) {
+  validForm = false;
+  if (obj.hasError) return;
+  obj.className += " error";
+  obj.onchange = removeError;
+  let errorSpan = document.createElement("span");
+  errorSpan.className = "error";
+  errorSpan.appendChild(document.createTextNode(message));
+  obj.parentNode.appendChild(errorSpan);
+  obj.hasError = errorSpan;
+  if (!firstError) firstError = obj;
+}
+
+function removeError() {
+  this.className = this.className.substring(0, this.className.lastIndexOf(" "));
+  this.parentNode.removeChild(this.hasError);
+  this.hasError = null;
+  this.onchange = null;
+}
+
+function buildWatchArray(newWatch) {
+  if (arr.length > 10) {
+    alert('Limit of watches is exceeded!');
+    return;
+  }
   arr.push(newWatch);
-  const list = document.querySelector('#newWatch');
-  for (let i = 0; i < arr.length; i++) {
-    const newElement = document.createElement('div');
-    const watchDescription = document.createElement('div');
-    const price = document.createElement('div');
+  const list = document.querySelector("#newWatch");
+    const newWatchWrapper = document.createElement("div");
+    newWatchWrapper.className = 'watch-wrapper';
+    const newWatchHeader = document.createElement("div");
+    newWatchHeader.className = 'watch-header';
+    newWatchWrapper.appendChild(newWatchHeader);
+    const newWatchTitle = document.createElement("div");
+    newWatchTitle.className = 'watch-item';
+    newWatchWrapper.appendChild(newWatchTitle);
+    const newWatchDesciption = document.createElement("div");
+    newWatchDesciption.className = 'watch-item'
+    newWatchWrapper.appendChild(newWatchDesciption);
+    const newWatchPrice = document.createElement("div");
+    newWatchPrice.className = 'watch-item'
+    newWatchWrapper.appendChild(newWatchPrice);
 
-    newElement.textContent = newWatch.title;
-    newElement.style.backgroundColor = 'wheat'
-    newElement.style.marginLeft = '50px';
-    newElement.style.width = '150px';
-    
-    watchDescription.textContent = newWatch.description;
-    watchDescription.style.backgroundColor = 'wheat';
-    watchDescription.style.marginLeft = '50px';
-    watchDescription.style.width = '150px';
+    newWatchHeader.textContent = 'Watch';
+    newWatchTitle.textContent = 'Title: ' + newWatch.title;
+    newWatchDesciption.textContent = 'Description: ' + newWatch.description;
+    newWatchPrice.textContent = 'Price: ' + newWatch.price;
 
-    price.textContent = newWatch.price;
-    price.style.backgroundColor = 'wheat';
-    price.style.marginLeft = '50px';
-    price.style.width = '150px';
-
-
-    // newWatch.style.margin = '50px';
-    list.appendChild(newElement);
-    list.appendChild(watchDescription);
-    list.appendChild(price);
-  }
+    list.appendChild(newWatchWrapper);
 }
-
-  
-
-
-
-
-

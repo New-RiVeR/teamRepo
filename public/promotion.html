@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS form</title>
-  <link rel="stylesheet" href="css/promotion.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS form</title>
+    <link rel="stylesheet" href="css/promotion.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
     <div class="header-social-columns">
       <ul class="header-menu">
         <li><a class="header-menu--items" href="#">CUSTOMER SUPPORT</a></li>
@@ -40,28 +40,30 @@
   </header>
     
   
-<title>New card</title>
-      
-         
-  <div class="form">
-    <form method="GET" action="">
-        Заголовок: <input type="text" name="title" id="title"/>
-        <p id="titleText"></p>
+    <title>New card</title>
 
-        <br>
-        Опис: <input type="text" name = "description" id="description"/>
-        <br><br>
-        <p id="passText"></p>
-        Ціна: <input type="number" min="100" max="1000" name = "price" id="price"/>
-       
-        <p id="priceText"></p>
-        <button type="button" onclick="validateForm()">Додати</button>
-    </form>
+    <div class="form" name="form">
+      <form method="post" action="">
+        <div class="control-wrapper">
+          <div class="control-wrapper title">Заголовок:</div>
+          <input type="text" name="title" id="title" />
+        </div>
 
-  </div>
-  <div id="newWatch"></div>
-  <script src="/js/promotion.js"></script>
-  <footer>
+        <div class="control-wrapper">
+          <div class="control-wrapper title">Опис:</div>
+          <input type="text" name="description" id="description" />
+        </div>
+
+        <div class="control-wrapper">
+          <div class="control-wrapper title">Ціна:</div>
+          <input type="number" min="100" max="1000" name="price" id="price" />
+        </div>
+      </form>
+      <button class="submit-button" type="button" onclick="validateForm()">Додати</button>
+    </div>
+    <div id="newWatch" class="main-wrapper"></div>
+    <script src="/js/promotion.js"></script>
+    <footer>
     <div class="background">
       <div class="background-inner">
         <div class="background-inner--block">
@@ -138,5 +140,5 @@
       </div>
     </div>
   </footer>
-</body>
+  </body>
 </html>
