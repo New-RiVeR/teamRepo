@@ -13,6 +13,8 @@
     "node": "^15.0.1",
     "sergey": "0.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
   "description": ""
 }
