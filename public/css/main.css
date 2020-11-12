@@ -1,37 +1,5 @@
-body {
+/* body {
   width: auto;
-}
-.header-container-social{
-  
-  margin-left: 0%;
-  display: flex;
-  justify-content: space-around;
-  width: 35%;
-  height: 30px;
-  font-size: 16px;
-  transform: scale(0.6);
-  font-family: cursive;
- margin-left: 0%;
-}
-.svg-cart-icon {
-  display: flex;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin-right: 2%;
-  color: #ccc;
-}
-.header-container-social :hover {
-  color: burlywood;
-}
-.header-container-social-ico{
-  margin: 3px 10px 10px 0;
-}
-.header-container-social-tel{
-  color: white;
-}
-.header-container {
-  margin-left: 0%;
-  background-color: black;
 }
 .watch-box {
   position: relative;
@@ -218,4 +186,4 @@ body {
   }
 .qqq {
 height: 500px;
-}
+} */
