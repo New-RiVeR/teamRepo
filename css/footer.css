@@ -1,7 +1,7 @@
 
 .background {
     background-color: #0e0e0e;
-    height: 510px;
+    height: 100%;
     width: 100%;
 }
 
@@ -150,4 +150,111 @@ ul.main-footer1 {
     text-align: center;
     color: #8e8e8e;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+@media(max-width:1140px){
+    .centre-inner--right,
+    .right-inner--left{
+        display: none;
+    }
+    .centre-inner--left ul{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1090px){
+    .footer-placeholder{
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 940px){
+    .centre-inner{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .background-inner--block{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-inner,
+    .right-inner{
+        width: 100%;
+    }
+    .left-inner--top{
+        text-align: center;
+    }
+    .left-inner--bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right-inner--right{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-footer1{
+        display: flex;
+    }
+    .main-footer1 li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-end{
+        margin-top: 16px;
+    }
+    .background-inner{
+        padding-top: 50px;
+    }
+}
+
+@media(max-width: 670px){
+    .right-inner--right{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title1{
+        text-align: center;
+    }
+    .main-footer1{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-title{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:620px){
+    .left-inner--bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-inner--bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-title1{
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 564px){
+    .footer-item--span1,
+    .footer-item--span2,
+    .footer-item--span3,
+    .footer-item--span4{
+        display: none;
+    }
+}
+
+@media(max-width: 415px){
+    .footer-placeholder{
+        width: 100%;
+    }
 }
