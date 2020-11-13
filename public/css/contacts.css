@@ -1,13 +1,14 @@
 .contacts-main {
     margin: 0;
+    width: 100%;
     height: 100%;
     background-color: #f8f8f8;
 }
 
 .container {
     margin: 0 auto;
-    padding: 80px 0px;
-    width: 1400px;
+    padding: 60px 0px;
+    width: 90%;
     height: 750px;
     display: flex;
     box-sizing: border-box;
@@ -22,6 +23,10 @@
 .container-right {
     width: 50%;
     height: 100%;
+}
+
+.map{
+    width: 100%;
 }
 
 .container-left--inner {
@@ -145,6 +150,11 @@
     font-family: sans-serif;
 }
 
+.confirm-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .send-button{
     display: flex;
     justify-content: flex-end;
@@ -179,4 +189,155 @@
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
+}
+
+@media(max-width: 1280px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .container-left{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-right{
+        width: 90%;
+    }
+    .container-left--inner{
+        margin: 150px 100px;
+    }
+    .container-send--inner{
+        width: 70%;
+    }
+    .container-send--inner h4{
+        font-size: 14px;
+    }
+    .send-form--top{
+        flex-direction: column;
+    }
+    .firstNamee{
+        margin-right: 0px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 2.6;
+    }
+    .lastNamee{
+        margin-left: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 2.6;
+    }
+    .email{
+        line-height: 2.6;
+    }
+    .confirm-label{
+        font-size: 20px;
+    }
+    .btn-send{
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    .btn-send:hover{
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1140px){
+    .container{
+        width: 90%;
+        padding-top: 31px;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-right{
+        width: 100%;
+    }
+    .firstNamee,
+    .lastNamee,
+    .email{
+        line-height: 2;
+    }
+    .container-send--inner{
+        width: 80%;
+    }
+    .container-leftInner--content h3{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 90%;
+        padding-top: 31px;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-send{
+        margin: 0px 35px;;
+    }
+    .container-send--inner{
+        width: 90%;
+    }
+}
+
+@media(max-width: 660px){
+    .container{
+        width: 85%;
+        padding-top: 31px;
+    }
+    .container-left{
+        width: 100%;
+    }
+}
+
+@media(max-width: 564px){
+    .container{
+        padding-top: 31px;
+    }
+    .container-left--inner{
+        margin: 150px 0px;
+        width: 80%;
+    }
+    .confirm-container{
+        display: block;
+    }
+    .confirm{
+        display: flex;
+        justify-content: center;
+    }
+    .send-button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 415px){
+    .container{
+        padding-top: 31px;
+        width: 90%;
+    }
+    .container-left--inner{
+        margin: 120px 0px;
+        width: 95%;
+    }
+    .container-send{
+        margin: 0px 15px;
+    }
+    .btn-send {
+        padding: 11px 30px;
+        font-size: 17px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
 }
