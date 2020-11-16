@@ -25,7 +25,8 @@ body {
     margin: 0%;
     list-style-type: none;
     display: flex;
-    float: left;
+    /* float: left; */
+    padding-left: 100px;
 }
 
 .header-social-ico-tel {
@@ -53,6 +54,7 @@ body {
 .header-social-ico {
     position: relative;
     padding-top: 10px;
+    display: flex;
 }
 
 ul.header-menu {
@@ -100,16 +102,24 @@ a.header-menu--items {
     justify-content: space-between;
 }
 
+.header-main--inner {
+    display: flex;
+}
+
+.menu-btn {
+    display: none;
+}
+
 .img-logo {
     display: block;
     padding-top: 40px;
-    padding-left: 85px;
+    padding-left: 100px;
 }
 
 .main-menu {
     margin: 0;
     display: flex;
-    padding-top: 50px;
+    align-items: center;
 }
 
 ul.main-menu li {
@@ -144,7 +154,7 @@ a.menu-items {
     color: #0e0e0e;
     background-color: #ab8e69;
     padding: 10px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-right: 30px;
     position: relative;
 
@@ -182,8 +192,11 @@ span.button-promotion::before {
     transition: all .4s;
 }
 
+.basket-btn{
+    display: flex;
+    align-items: center;
+}
 .basket-button {
-    margin-top: 40px;
     background-color: transparent;
     height: 38px;
     width: 38px;
@@ -191,8 +204,6 @@ span.button-promotion::before {
     color: white;
     position: relative;
     top: 2px;
-    margin-right: 7px;
-    display: block;
 }
 
 .basket-button svg {
@@ -243,4 +254,81 @@ span.button-promotion::before {
 .header-container {
     margin-left: 0%;
     background-color: black;
+}
+
+
+@media(max-width: 990px) {
+    .img-logo {
+        width: 108px;
+        height: 40px;
+    }
+
+    .header-main--menu {
+        height: 100%;
+    }
+
+    .header-main--inner {
+        height: 100%;
+    }
+}
+
+@media(max-width: 960px) {
+    .img-logo {
+        display: none;
+    }
+
+    .header-social-ico-tel {
+        display: none;
+    }
+    .header-menu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header-main--menu{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .header-menu{
+        padding-right: 50px;
+    }
+    .header-social-ico-list{
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 790px){
+    a.menu-items{
+        font-size: 11px;
+        font-weight: 600px;
+        letter-spacing: 5px;
+    }
+    .header-menu--items-resp{
+        display: none;
+    }
+    .button-menu{
+        display: flex;
+        align-self: center;
+    }
+    .menu-btn{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .button-promotion{
+        margin-right: 0px;
+    }
+    #mainMenu,
+    #basketButton{
+        display: none;
+    }
+    .button-menu{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .button-promotion{
+        display: none;
+    }
 }
