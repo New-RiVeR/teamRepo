@@ -315,6 +315,7 @@ span.button-promotion::before {
         display: flex;
         width: 30px;
         height: 30px;
+        background-image: url(../img/burger-menu.png);
         cursor: pointer;
     }
     .button-promotion{
