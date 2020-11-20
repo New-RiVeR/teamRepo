@@ -242,6 +242,9 @@ ul.main-footer1 {
         margin-top: 35px;
         margin-bottom: 10px;
     }
+    .footer-placeholder{
+        text-align: center;
+    }
 }
 
 @media(max-width: 564px){
