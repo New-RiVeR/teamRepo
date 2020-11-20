@@ -154,10 +154,9 @@ a.menu-items {
     color: #0e0e0e;
     background-color: #ab8e69;
     padding: 10px;
-    /* margin-left: 30px; */
     margin-right: 30px;
     position: relative;
-
+    border-radius: 10px;
 }
 
 span.button-promotion::before {
