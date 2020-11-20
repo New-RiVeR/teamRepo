@@ -12,6 +12,8 @@ button.onclick = () => {
     if (hidden) {
         menu.style.display = 'none';
         basket.style.display = 'none'
+        button.style.backgroundImage = 'url(../img/burger-menu.png)';
+        button.style.backgroundColor = 'white'
         hidden = false;
     } else {
         menu.style.display = 'block';
@@ -22,6 +24,8 @@ button.onclick = () => {
         menuBtn.style.alignSelf = 'flex-start';
         button.style.marginTop = '20px';
         button.style.marginBottom = '20px';
+        button.style.backgroundColor = 'transparent'
+        button.style.backgroundImage = 'url(../img/close-button.png)';
         menuHome.style.fontSize = '25px';
         menuHome.style.letterSpacing = '10px'
         menuAbout.style.fontSize = '25px';
