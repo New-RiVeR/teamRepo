@@ -6,8 +6,8 @@
 .form {
   border: 1px solid #ddd;
   padding: 15px;
-  width: 500px;
-  background-color: bisque;
+  max-width: 500px;
+  background-color: #ab8e69;
   margin: 50px;
 }
 
@@ -21,9 +21,11 @@
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
+  color: rgb(51, 0, 0);
 }
 
 .submit-button {
+  background-color: #e6e6e6;
   margin: 10px 0;
   cursor: pointer;
   outline: none;
@@ -56,14 +58,14 @@ input[type="number"],input[type="text"]  {
 .main-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .watch-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: bisque;
+  background-color: #ab8e69;
   margin: 10px;
   min-width: 150px;
   padding: 15px;
@@ -72,12 +74,33 @@ input[type="number"],input[type="text"]  {
 .watch-header {
   font-size: 22px;
   padding-bottom: 10px;
-  color: forestgreen;
+  color: rgb(51, 0, 0);
   font-family: 'Roboto', sans-serif;
 }
 
 .watch-item {
+  color: white;
   font-size: 20px;
   padding: 10px 0;
   font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width: 990px){
+  .form{
+    margin: 30px auto;
+  }
+  .submit-button{
+    margin: 0px auto;
+    display: block;
+  }
+}
+
+@media(max-width: 660px){
+  .main-wrapper{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form{
+    width: 80%;
+  }
 }

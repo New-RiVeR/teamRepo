@@ -6,7 +6,7 @@
     <title>JS form</title>
     <link rel="stylesheet" href="css/promotion.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
   </head>
@@ -16,19 +16,19 @@
 
     <div class="container-promotion--content">
     <div class="form" name="form">
-      <form method="post" action="">
+      <form method="post" action="" id="formMain">
         <div class="control-wrapper">
-          <div class="control-wrapper title">Заголовок:</div>
+          <div class="control-wrapper title">*Заголовок:</div>
           <input type="text" name="title" id="title" />
         </div>
 
         <div class="control-wrapper">
-          <div class="control-wrapper title">Опис:</div>
+          <div class="control-wrapper title">*Опис:</div>
           <input type="text" name="description" id="description" />
         </div>
 
         <div class="control-wrapper">
-          <div class="control-wrapper title">Ціна:</div>
+          <div class="control-wrapper title">*Ціна:</div>
           <input type="number" min="100" max="1000" name="price" id="price" />
         </div>
       </form>
@@ -38,7 +38,9 @@
     <div id="newWatch" class="main-wrapper"></div>
   </div>
 
+
     <script src="/js/promotion.js"></script>
+    <script src="/js/header.js"></script>
     <sergey-import src="footer" />
   </body>
 </html>
