@@ -1,0 +1,27 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <div>
+      <label for="name" class="form-label">Name *</label>
+      <input type="text" class="form-control" formControlName="userName">
+      <span *ngIf="form.controls.userName.invalid && (form.controls.userName.touched || userSubmitted)" class="text-danger">This field is required</span>
+    </div>
+    <div>
+      <label for="name" class="form-label">Age *</label>
+      <input type="number" class="form-control" formControlName="userAge">
+      <span *ngIf="form.controls.userAge.invalid && (form.controls.userAge.touched || userSubmitted)" class="text-danger">This field is required</span>
+    </div>
+    <div>
+      <label for="name" class="form-label">Email *</label>
+      <input type="email" class="form-control" formControlName="email">
+      <span *ngIf="form.controls.email.invalid && (form.controls.email.touched || userSubmitted)" class="text-danger">This field is required</span>
+    </div>
+    <div>
+      <label for="name" class="form-label">Password *</label>
+      <input type="password" class="form-control" formControlName="password">
+      <span *ngIf="form.controls.password.invalid && (form.controls.password.touched || userSubmitted)" class="text-danger">This field is required</span>
+    </div>
+    <!-- <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Save</button> -->
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="reset" class="btn btn-secondary ml-2">Cancel</button>
+  </form>
+</div>
